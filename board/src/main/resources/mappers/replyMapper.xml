@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.board.mappers.reply">
+	<!-- 
+	rno는 댓글의 고유 번호, bno는 댓글이 작성된 게시물의 번호입니다. 
+	댓글 테이블은 게시물 테이블에 종속된 하위 테이블이므로, 
+	상위 테이블의 pk(Primary key) 컬럼인 bno를 fk(foreign key)로 
+	설정해주어야합니다. 또한, 하나의 게시물에 여러개의 댓글이 달릴 수 있으므로, 
+	단순히 rno를 pk로 설정하는게 아닌, 
+	rno, bno 2개의 컬름을 pk로 설정합니다.	
+		
+	 -->
+	<!-- 댓글 조회 -->
+	<select id="replyList" parameterType="int" resultType="com.board.domain.ReplyVO">
+		select
+			rno, bno, writer, content, regDate
+		from tbl_reply
+			where bno = #{bno}		
+	</select>
+	
+	<!-- 댓글 작성 -->
+	<insert id="replyWrite" parameterType="com.board.domain.ReplyVO">
+		insert into tbl_reply(bno, writer, content, regDate)
+			value(#{bno}, #{writer}, #{content}, #{regDate})
+	</insert>
+		
+	<!-- 댓글 수정 -->
+	<update id="replyModify" parameterType="com.board.domain.ReplyVO">
+		update tbl_reply set
+			writer = #{writer},
+			content = #{content}
+		where rno = #{rno}
+			and bno = #{bno}	
+	</update>
+	
+	<!-- 댓글 삭제 -->
+	<delete id="replyDelete" parameterType="com.board.domain.ReplyVO">
+		delete from tbl_reply
+		where rno = #{rno}
+			and bno = ${bno}	
+	</delete>
+	
+</mapper>
