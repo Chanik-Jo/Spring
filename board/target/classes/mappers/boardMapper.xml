@@ -35,6 +35,15 @@
 			bno = #{bno}			
 	</select>
 
+<!-- 카운터 증가 -->
+	<update id="viewCountIncrease" parameterType="com.board.domain.BoardVO" >
+		update tbl_board
+			set
+				viewCnt = sum(viewCnt,1)
+			where bno = #{bno}
+	</update>
+	
+	
 	<!-- 게시물 수정 -->
 	<update id="modify" parameterType="com.board.domain.BoardVO" >
 		update tbl_board
@@ -69,7 +78,9 @@
 			bno, title, writer, regDate, viewCnt
 		from tbl_board
 		order by bno desc
-			limit #{displayPost}, #{postNum}
+		<!-- 			displaypost에서 postnum 개만큼 -->
+			limit #{displayPost}, #{postNum} 
+
 			<!--  
 			boardDaoImpl.java에서
 				HashMap<String, Integer> data = new HashMap<String, Integer>();			

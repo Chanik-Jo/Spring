@@ -1,7 +1,9 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+
+
+
 
 <!DOCTYPE html>
 <html>
@@ -48,7 +50,9 @@
 
 <div>
 
+
 	<c:if test="${page.prev}">
+
 		<span>[ <a href="/board/listPageSearch?num=${page.startPageNum - 1}${page.searchTypeKeyword}">이전</a> ]</span>
 	</c:if>
 	
@@ -56,7 +60,10 @@
 		<span>
 		
 			<c:if test="${select != num}">
+
+
 				<a href="/board/listPageSearch?num=${num}${page.searchTypeKeyword}">${num}</a>
+
 			</c:if> 			
 			
 			<c:if test="${select == num}">
@@ -65,21 +72,17 @@
 	 			
 		</span>
 	</c:forEach>
-	
+
 	<c:if test="${page.next}">
 		<span>[ <a href="/board/listPageSearch?num=${page.endPageNum + 1}${page.searchTypeKeyword}">다음</a> ]</span>
 	</c:if>
 	
 	
-	<%-- <c:forEach begin="1" end="${pageNum}" var="num">
-  		<span>
-  			<a href="/board/listPage?num=${num}">${num}</a>
-		</span>
-	</c:forEach> --%>
+
 	
 	
-	<div><!--  검색했던 옵션을 백엔드로 불러온뒤 그대로 적용함으로써 페이지가 빠귀어도 무슨옵션으로 검색했는지 유지한다. -->
-		<select name="searchType"><!-- eq means equal. Express Language는 "${}" 식으로 쓰는구나. -->
+	<div>
+		<select name="searchType">
 		    <option value="title" <c:if test="${page.searchType eq 'title'}">selected</c:if>>제목</option>
 	        <option value="content" <c:if test="${page.searchType eq 'content'}">selected</c:if>>내용</option>
 		    <option value="title_content" <c:if test="${page.searchType eq 'title_content'}">selected</c:if>>제목+내용</option>
@@ -101,7 +104,7 @@
 		let keyword =  document.getElementsByName("keyword")[0].value;
 		
 		location.href = "/board/listPageSearch?num=1" + "&searchType=" + searchType + "&keyword=" + keyword;
-	};//여기서 사이트 주소내장 쿼리로 때려주면 jsp에서 REquested Param으로 분석한뒤 필요한걸 model.addattribute로 등록후 다시 프론트에서 추출해서 사용!!
+	};
 </script>
 
 </body>

@@ -20,7 +20,8 @@ public interface BoardService {
 	
 	// 게시물 삭제
 	public void delete(int bno) throws Exception;
-	
+	//게시물 카운터 증가.
+	public void viewCountIncrease(BoardVO vo) throws Exception; 
 	
 	
 	// 게시물 총 갯수
@@ -39,4 +40,6 @@ public interface BoardService {
 	
 	// 게시물 총 갯수 + 검색 적용
 	public int searchCount(String searchType, String keyword) throws Exception;
+
+	
 }

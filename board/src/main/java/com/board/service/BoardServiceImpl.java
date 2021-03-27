@@ -22,6 +22,13 @@ public class BoardServiceImpl implements BoardService {
 		return dao.list();
 	}
 
+	// 게시물 카운터 증가
+	@Override
+	public void viewCountIncrease(BoardVO vo) throws Exception {
+
+		dao.write(vo);
+	}
+
 	// 게시물 작성
 	@Override
 	public void write(BoardVO vo) throws Exception {
@@ -43,6 +50,8 @@ public class BoardServiceImpl implements BoardService {
 		dao.modify(vo);
 	}
 
+	
+	
 	// 게시물 삭제
 	@Override
 	public void delete(int bno) throws Exception {

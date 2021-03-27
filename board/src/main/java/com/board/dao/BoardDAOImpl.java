@@ -31,6 +31,12 @@ public class BoardDAOImpl implements BoardDAO {
 			
 		sql.insert(namespace + ".write", vo);
 	}
+	// 게시물카운트 증가
+	@Override	
+	public void viewCountIncrease(BoardVO vo) throws Exception {
+		
+		sql.update(namespace + ".viewCountIncrease", vo);
+	}
 
 	// 게시물 조회
 	@Override
@@ -76,9 +82,8 @@ public class BoardDAOImpl implements BoardDAO {
 	
 	
 	// 게시물 목록 + 페이징 + 검색
-	@Override
-	public List<BoardVO> listPageSearch(
-			int displayPost, int postNum, String searchType, String keyword) throws Exception {
+	@Override	
+	public List<BoardVO> listPageSearch(int displayPost, int postNum, String searchType, String keyword) throws Exception {
 
 		HashMap<String, Object> data = new HashMap<String, Object>();
 		

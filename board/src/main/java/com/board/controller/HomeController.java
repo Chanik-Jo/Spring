@@ -38,4 +38,23 @@ public class HomeController {
 		
 	}
 	
+	
+	@RequestMapping(value = "/resume", method = RequestMethod.GET)
+	public String resume(Locale locale, Model model) {
+		logger.info("Welcome home! The client locale is {}.", locale);
+		
+		
+		
+		model.addAttribute("Licence1", "워드프로세서" );
+		model.addAttribute("highSchoolGradulate", "순천 제일 고등학교 졸업" );
+		model.addAttribute("armyServiceDischarge", "군 전역" );
+		model.addAttribute("Licence2", "컴활 1급" );
+		model.addAttribute("Licence3", "정보처리기사 취득" );
+		model.addAttribute("collegeGradulate", "전남대학교 졸업" );
+		model.addAttribute("ChamberOfCommerenceGradulate", "상공회의소 국비교육 수료" );
+		
+		return "nicePage/resume";
+		//return "home";
+		
+	}
 }

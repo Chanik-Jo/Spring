@@ -1,32 +1,33 @@
-<!doctype html>
-<html style="font-size: 16px;"><head>
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="ko-KR">
+  <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <meta name="keywords" content="Post 1 Headline">
     <meta name="description" content="">
     <meta name="page_type" content="np-template-header-footer-from-plugin">
-    <title>Post 2 Headline</title>
-    <link rel="stylesheet" href="../nicepage.css" media="screen">
-<link rel="stylesheet" href="../Post-Template.css" media="screen">
-    <script class="u-script" type="text/javascript" src="../jquery.js" defer=""></script>
-    <script class="u-script" type="text/javascript" src="../nicepage.js" defer=""></script>
-    <meta name="generator" content="Nicepage 3.9.0, nicepage.com">
+    <title>Post Template</title>
+    <link rel="stylesheet" href="nicepage.css" media="screen">
+<link rel="stylesheet" href="Post-Template.css" media="screen">
+    <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
+    <meta name="generator" content="Nicepage 3.9.3, nicepage.com">
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
     
     
     <script type="application/ld+json">{
 		"@context": "http://schema.org",
 		"@type": "Organization",
-		"name": "",
+		"name": "Site1",
 		"url": "index.html"
 }</script>
     <meta property="og:title" content="Post Template">
     <meta property="og:type" content="website">
     <meta name="theme-color" content="#478ac9">
-    <link rel="canonical" href="../index.html">
+    <link rel="canonical" href="index.html">
     <meta property="og:url" content="index.html">
   </head>
-  <body class="u-body"><header class="u-clearfix u-header u-header" id="sec-85c8"><div class="u-clearfix u-sheet u-sheet-1">
+  <body class="u-body"><header class="u-clearfix u-header u-sticky u-white u-header" id="sec-85c8"><div class="u-clearfix u-sheet u-valign-middle-lg u-valign-middle-sm u-valign-middle-xl u-valign-middle-xs u-sheet-1">
         <nav class="u-align-left u-menu u-menu-dropdown u-offcanvas u-offcanvas-shift u-menu-1" data-responsive-from="MD">
           <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px; font-weight: 700; text-transform: uppercase;">
             <a class="u-button-style u-custom-active-border-color u-custom-border u-custom-border-color u-custom-borders u-custom-hover-border-color u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-text-color u-custom-text-hover-color u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#">
@@ -37,29 +38,29 @@
             </a>
           </div>
           <div class="u-custom-menu u-nav-container">
-            <ul class="u-nav u-spacing-30 u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-border-2 u-border-active-palette-1-base u-border-hover-palette-1-base u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-palette-1-base u-text-grey-90 u-text-hover-grey-90" href="../Home.html#introduce" data-page-id="292223659" style="padding: 10px 0px;">Home</a>
-</li><li class="u-nav-item"><a class="u-border-2 u-border-active-palette-1-base u-border-hover-palette-1-base u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-palette-1-base u-text-grey-90 u-text-hover-grey-90" href="../Home.html#framework" data-page-id="292223659" style="padding: 10px 0px;">Stats</a>
-</li><li class="u-nav-item"><a class="u-border-2 u-border-active-palette-1-base u-border-hover-palette-1-base u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-palette-1-base u-text-grey-90 u-text-hover-grey-90" href="../resume.html#sec-8581" data-page-id="45112699" style="padding: 10px 0px;">Resume</a>
-</li><li class="u-nav-item"><a class="u-border-2 u-border-active-palette-1-base u-border-hover-palette-1-base u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-palette-1-base u-text-grey-90 u-text-hover-grey-90" href="../Home.html#contact" data-page-id="292223659" style="padding: 10px 0px;">Contact me</a>
-</li><li class="u-nav-item"><a class="u-border-2 u-border-active-palette-1-base u-border-hover-palette-1-base u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-palette-1-base u-text-grey-90 u-text-hover-grey-90" href="../forum.html#sec-8581" data-page-id="60385609" style="padding: 10px 0px;">Forum</a>
+            <ul class="u-nav u-spacing-30 u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-border-2 u-border-active-palette-1-base u-border-hover-palette-1-base u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-palette-1-base u-text-grey-90 u-text-hover-grey-90" href="Home.html#introduce" data-page-id="292223659" style="padding: 10px 0px;">Home</a>
+</li><li class="u-nav-item"><a class="u-border-2 u-border-active-palette-1-base u-border-hover-palette-1-base u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-palette-1-base u-text-grey-90 u-text-hover-grey-90" href="Home.html#framework" data-page-id="292223659" style="padding: 10px 0px;">Stats</a>
+</li><li class="u-nav-item"><a class="u-border-2 u-border-active-palette-1-base u-border-hover-palette-1-base u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-palette-1-base u-text-grey-90 u-text-hover-grey-90" href="resume.html#sec-8581" data-page-id="45112699" style="padding: 10px 0px;">Resume</a>
+</li><li class="u-nav-item"><a class="u-border-2 u-border-active-palette-1-base u-border-hover-palette-1-base u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-palette-1-base u-text-grey-90 u-text-hover-grey-90" href="Home.html#contact" data-page-id="292223659" style="padding: 10px 0px;">Contact me</a>
+</li><li class="u-nav-item"><a class="u-border-2 u-border-active-palette-1-base u-border-hover-palette-1-base u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-palette-1-base u-text-grey-90 u-text-hover-grey-90" href="forum.html#sec-8581" data-page-id="60385609" style="padding: 10px 0px;">Forum</a>
 </li></ul>
           </div>
           <div class="u-custom-menu u-nav-container-collapse">
             <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
               <div class="u-sidenav-overflow">
                 <div class="u-menu-close"></div>
-                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="../Home.html#introduce" data-page-id="292223659" style="padding: 10px 0px;">Home</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="../Home.html#framework" data-page-id="292223659" style="padding: 10px 0px;">Stats</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="../resume.html#sec-8581" data-page-id="45112699" style="padding: 10px 0px;">Resume</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="../Home.html#contact" data-page-id="292223659" style="padding: 10px 0px;">Contact me</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="../forum.html#sec-8581" data-page-id="60385609" style="padding: 10px 0px;">Forum</a>
+                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Home.html#introduce" data-page-id="292223659" style="padding: 10px 0px;">Home</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Home.html#framework" data-page-id="292223659" style="padding: 10px 0px;">Stats</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="resume.html#sec-8581" data-page-id="45112699" style="padding: 10px 0px;">Resume</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Home.html#contact" data-page-id="292223659" style="padding: 10px 0px;">Contact me</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="forum.html#sec-8581" data-page-id="60385609" style="padding: 10px 0px;">Forum</a>
 </li></ul>
               </div>
             </div>
             <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
           </div>
         </nav>
-        <h4 class="u-text u-text-1">예비 개발자 조찬익입니다.(Logo)</h4>
+        <h4 class="u-text u-text-1">Logo)</h4>
       </div></header>
     <section class="u-align-left u-clearfix u-section-1" id="sec-ef6e">
       <div class="u-clearfix u-sheet u-valign-middle-md u-valign-middle-sm u-valign-middle-xs u-sheet-1"></div>
@@ -104,5 +105,5 @@
         <span>Website Builder Software</span>
       </a>. 
     </section>
-  
-</body></html>
+  </body>
+</html>

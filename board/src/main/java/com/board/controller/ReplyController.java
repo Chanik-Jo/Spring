@@ -24,7 +24,7 @@ public class ReplyController {
 		
 		replyService.write(vo);
 		
-		return "redirect:/board/view?bno=" + vo.getBno();
+		return "redirect:/forum/view?bno=" + vo.getBno();
 	}
 	
 	// 댓글 수정

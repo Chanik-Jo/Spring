@@ -38,7 +38,10 @@ public interface BoardDAO {
 			int displayPost, int postNum, String searchType, String keyword) throws Exception;
 	
 	// 게시물 총 갯수 + 검색 적용
-	public int searchCount(String searchType, String keyword) throws Exception;	
+	public int searchCount(String searchType, String keyword) throws Exception;
+
+	//게시글 카운터 증가.
+	public void viewCountIncrease(BoardVO vo) throws Exception;	
 		
 		
 }
